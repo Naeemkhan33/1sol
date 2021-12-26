@@ -7,7 +7,10 @@ const SectionStatistics = ({ tabs }) => {
     <div className='d-flex flex-column h-100'>
       {/* Buttons */}
       <div className='d-flex justify-content-between'>
-        <button type='button' className='btn btn-dark fw-bold border-radius-1'>
+        <button
+          type='button'
+          className='btn btn-outline-light border-0 shadow-lg bg-primary-1 fw-bold border-radius-1'
+        >
           <span className='me-1'>Statistics</span>
           <span className='badge bg-quaternary text-uppercase'>
             {(tabs === 1 && <span>0.1</span>) ||
@@ -20,7 +23,7 @@ const SectionStatistics = ({ tabs }) => {
       </div>
       {/* /Buttons */}
       {/* Body */}
-      <div className='flex-fill border bg-dark p-3 small'>
+      <div className='flex-fill shadow-lg bg-primary-1 p-3 small border-radius-1'>
         <div>
           <div className='d-block'>
             Anonymity set
@@ -61,7 +64,7 @@ const SectionStatistics = ({ tabs }) => {
       {/* /Body */}
       {/* link */}
       <div className='text-end'>
-        <span class='btn btn-dark border-radius-4'>
+        <span class='btn btn-outline-light border-0 shadow-lg bg-primary-1 border-radius-4'>
           <small>
             Your IP{' '}
             <a

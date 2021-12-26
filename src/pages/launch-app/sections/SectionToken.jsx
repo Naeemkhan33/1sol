@@ -17,8 +17,8 @@ const SectionToken = ({
       <div className='d-flex justify-content-between'>
         <button
           type='button'
-          className={`btn fw-bold border-radius-1 ${
-            select ? 'btn-primary' : 'btn-dark'
+          className={`btn fw-bold border-0 shadow-lg bg-primary-1 border-radius-1 ${
+            select ? 'btn-primary' : 'btn-outline-light'
           }`}
           onClick={onClick}
         >
@@ -26,8 +26,8 @@ const SectionToken = ({
         </button>
         <button
           type='button'
-          className={`btn fw-bold border-radius-2 ${
-            select ? 'btn-dark' : 'btn-primary'
+          className={`btn fw-bold border-0 shadow-lg bg-primary-1 border-radius-2 ${
+            select ? 'btn-outline-light' : 'btn-primary'
           }`}
           onClick={onClick}
         >
@@ -36,9 +36,9 @@ const SectionToken = ({
       </div>
       {/* /Buttons */}
       {/* Body */}
-      <div className='flex-fill border bg-dark p-3'>
+      <div className='flex-fill shadow-lg bg-primary-1 p-3 border-radius-3'>
         {select ? (
-          <div>
+          <div className='mb-5'>
             {' '}
             <Deposit
               onTab1={onTab1}
@@ -49,7 +49,7 @@ const SectionToken = ({
             />
           </div>
         ) : (
-          <div>
+          <div className='mb-5'>
             {' '}
             <WithDraw />
           </div>
@@ -62,7 +62,7 @@ const SectionToken = ({
           target='_blank'
           rel='noreferrer'
           href='https://etherscan.io/address/0x12D66f87A04A9E220743712cE6d9bB1B5616B8Fc'
-          class='btn btn-dark border-radius-3'
+          class='btn btn-outline-light border-0 shadow-lg bg-primary-1 border-radius-3'
         >
           <small className='text-quaternary'>
             eth-

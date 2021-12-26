@@ -17006,7 +17006,7 @@ h1,.h1 {
 }
 
 .btn-primary:hover,.btn-primary:active,.btn-primary.active,.btn-primary:focus,.btn-primary.focus {
-	box-shadow: 0 10px 30px -6px rgba(153,69,255,.5)!important;
+	box-shadow: 0 10px 10px -6px rgba(153,69,255,.5)!important;
 	background: linear-gradient(135deg,#4af3ab 0%,#8b2cff 100%);
 }
 
@@ -17252,7 +17252,7 @@ a:hover {
 
 @media(min-width:1400px) {
 	.container-delta {
-		max-width: 1300px;
+		max-width: 1500px;
 		padding: 0 55px;
 	}
 }

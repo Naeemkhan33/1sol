@@ -17,6 +17,10 @@
     border-radius: 0 0 0 80px;
 }
 
+.bg-primary-1 { 
+    background-color: #222429;
+}
+
 .container-launchApp .deposit-nav-item.active { 
    color: #766DE4;
 }

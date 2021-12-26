@@ -14,7 +14,7 @@ const Deposit = ({ onTab1, onTab2, onTab3, onTab4, active }) => {
               <select
                 name='select'
                 id='select'
-                className='form-select w-100 py-1 text-start bg-dark text-white'
+                className='form-select w-100 py-1 text-start shadow-lg bg-primary-1 text-white'
               >
                 <option value='ETH'>ETH</option>
                 <option value='DAI'>DAI</option>

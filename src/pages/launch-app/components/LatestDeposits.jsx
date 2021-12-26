@@ -12,6 +12,10 @@ const LatestDeposits = () => {
     {},
     { odd: true },
     { odd: true },
+    {},
+    {},
+    { odd: true },
+    { odd: true },
   ];
 
   return (
@@ -19,7 +23,7 @@ const LatestDeposits = () => {
       <ul className='nav row row-cols-1 row-cols-md-2'>
         {list.map((item) => (
           <li>
-            <div className={`px-1 ${item.odd && 'bg-primary'}`}>
+            <div className={`px-1 ${item.odd && 'bg-dark'}`}>
               <span className='me-1'>17827.</span>
               <span className='text-quaternary'>4 minutes ago</span>
             </div>

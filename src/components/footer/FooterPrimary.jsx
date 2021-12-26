@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FooterPrimary = () => {
   return (
-    <footer className='bg-dark px-1 wave-block'>
+    <footer className='bg-primary px-1 wave-block'>
       <div className='container container-delta'>
         <div className='row'>
           <div className='col-lg-6 mx-auto text-center text-lg-start mb-5 mb-lg-0'>
@@ -135,7 +135,7 @@ const FooterPrimary = () => {
         <div className='footer-bottom'>
           <div className='row'>
             <div className='col-lg-12'>
-              <p className='content has-bg-dark text-center'>
+              <p className='content text-center'>
                 Built by <a href='https://1sol.io/'>1Sol</a> Team with 💡
               </p>
             </div>
