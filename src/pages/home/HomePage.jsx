@@ -9,7 +9,7 @@ import SectionWorkProcess from './sections/SectionWorkProcess';
 
 const HomePage = () => {
   return (
-    <main className='container'>
+    <main>
       <SectionBanner />
       <SectionSupporters />
       <SectionPartners />

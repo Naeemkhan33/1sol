@@ -13,7 +13,7 @@ const LaunchAppPage = () => {
   };
 
   return (
-    <main className='container mb-5'>
+    <main className='mb-5'>
       <section className='banner banner-1 bg-primary rounded-lg wave-block'>
         <HeaderPrimary />
         <div className='container container-launchApp py-5 mb-5'>
