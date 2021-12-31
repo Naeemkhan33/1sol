@@ -2,7 +2,8 @@ import React from 'react';
 import ReactTooltip from 'react-tooltip';
 import LatestDeposits from '../components/LatestDeposits';
 
-const SectionStatistics = ({ tabs }) => {
+const SectionStatistics = ({ tabs, data }) => {
+  console.log(data);
   return (
     <div className='d-flex flex-column h-100'>
       {/* Buttons */}
@@ -23,7 +24,7 @@ const SectionStatistics = ({ tabs }) => {
       </div>
       {/* /Buttons */}
       {/* Body */}
-      <div className='flex-fill shadow-lg bg-primary-1 p-3 small border-radius-1'>
+      <div className='flex-fill shadow-lg bg-primary-1 p-3 small'>
         <div>
           <div className='d-block'>
             Anonymity set
@@ -44,7 +45,7 @@ const SectionStatistics = ({ tabs }) => {
           </div>
           <div className='field'>
             <span>
-              <b className='text-quaternary'>17826</b>{' '}
+              <b className='text-quaternary'>{data.equal_user_deposits}</b>{' '}
               <span>equal user deposits</span>
             </span>
           </div>
@@ -54,28 +55,28 @@ const SectionStatistics = ({ tabs }) => {
             <span>Latest deposits</span>
           </div>
           <div className='small'>
-            {tabs === 1 && <LatestDeposits />}
-            {tabs === 2 && <LatestDeposits />}
-            {tabs === 3 && <LatestDeposits />}
-            {tabs === 4 && <LatestDeposits />}
+            {tabs === 1 && <LatestDeposits deposit={data.latest_deposits} />}
+            {tabs === 2 && <LatestDeposits deposit={data.latest_deposits} />}
+            {tabs === 3 && <LatestDeposits deposit={data.latest_deposits} />}
+            {tabs === 4 && <LatestDeposits deposit={data.latest_deposits} />}
           </div>
         </div>
       </div>
       {/* /Body */}
       {/* link */}
       <div className='text-end'>
-        <span class='btn btn-outline-light border-0 shadow-lg bg-primary-1 border-radius-4'>
+        <span className='btn btn-outline-light border-0 shadow-lg bg-primary-1 rounded-0'>
           <small>
             Your IP{' '}
             <a
               target='_blank'
               href='https://www.torproject.org/'
               rel='noreferrer'
-              class='text-quaternary'
+              className='text-quaternary'
               data-tip
               data-for='ipTip'
             >
-              119.159.148.15, Chakwal, PK
+              {data?.your_ip}
             </a>
             <ReactTooltip id='ipTip' effect='solid' backgroundColor='#62A8CA'>
               Make sure to use different IP addresses for deposits and

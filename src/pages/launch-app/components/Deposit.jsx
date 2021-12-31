@@ -46,19 +46,17 @@ const Deposit = ({ onTab1, onTab2, onTab3, onTab4, active }) => {
               </label>
               <ul className='nav small justify-content-between position-relative'>
                 <hr className='line' />
-                <li className='px-2'>
+                <li className='px-2 position-relative'>
                   <label
+                    onClick={onTab1}
                     for='check1'
                     className={`text-center deposit-nav-item fs-6 ${
                       active === 1 && 'active'
                     }`}
                   >
-                    <input
-                      className='form-check-input'
-                      type='radio'
-                      name='check'
-                      id='check1'
+                    <span
                       onClick={onTab1}
+                      className={`check-dot ${active === 1 && 'active'}`}
                     />
                     <label
                       for='check1'
@@ -69,19 +67,17 @@ const Deposit = ({ onTab1, onTab2, onTab3, onTab4, active }) => {
                     </label>
                   </label>
                 </li>
-                <li className='px-2'>
+                <li className='px-2 position-relative'>
                   <label
+                    onClick={onTab2}
                     for='check2'
                     className={`text-center deposit-nav-item fs-6  ${
                       active === 2 && 'active'
                     }`}
                   >
-                    <input
-                      className='form-check-input'
-                      type='radio'
-                      name='check'
-                      id='check2'
+                    <span
                       onClick={onTab2}
+                      className={`check-dot ${active === 2 && 'active'}`}
                     />
                     <label
                       for='check2'
@@ -92,19 +88,17 @@ const Deposit = ({ onTab1, onTab2, onTab3, onTab4, active }) => {
                     </label>
                   </label>
                 </li>
-                <li className='px-2'>
+                <li className='px-2 position-relative'>
                   <label
+                    onClick={onTab3}
                     for='check3'
                     className={`text-center deposit-nav-item fs-6  ${
                       active === 3 && 'active'
                     }`}
                   >
-                    <input
-                      className={`form-check-input ${active === 3 && 'active'}`}
-                      type='radio'
-                      name='check'
-                      id='check3'
+                    <span
                       onClick={onTab3}
+                      className={`check-dot ${active === 3 && 'active'}`}
                     />
                     <label
                       for='check3'
@@ -115,19 +109,17 @@ const Deposit = ({ onTab1, onTab2, onTab3, onTab4, active }) => {
                     </label>
                   </label>
                 </li>
-                <li className='px-2'>
+                <li className='px-2 position-relative'>
                   <label
+                    onClick={onTab4}
                     for='check4'
                     className={`text-center deposit-nav-item fs-6  ${
                       active === 4 && 'active'
                     }`}
                   >
-                    <input
-                      className='form-check-input'
-                      type='radio'
-                      name='check'
-                      id='check4'
+                    <span
                       onClick={onTab4}
+                      className={`check-dot ${active === 4 && 'active'}`}
                     />
                     <label
                       onClick={onTab4}

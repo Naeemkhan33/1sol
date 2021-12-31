@@ -36,7 +36,7 @@ const SectionToken = ({
       </div>
       {/* /Buttons */}
       {/* Body */}
-      <div className='flex-fill shadow-lg bg-primary-1 p-3 border-radius-3'>
+      <div className='flex-fill shadow-lg bg-primary-1 p-3'>
         {select ? (
           <div className='mb-5'>
             {' '}
@@ -62,7 +62,7 @@ const SectionToken = ({
           target='_blank'
           rel='noreferrer'
           href='https://etherscan.io/address/0x12D66f87A04A9E220743712cE6d9bB1B5616B8Fc'
-          class='btn btn-outline-light border-0 shadow-lg bg-primary-1 border-radius-3'
+          className='btn btn-outline-light border-0 shadow-lg bg-primary-1 rounded-0'
         >
           <small className='text-quaternary'>
             eth-

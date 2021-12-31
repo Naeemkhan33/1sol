@@ -21,28 +21,40 @@
     background-color: #222429;
 }
 
-.container-launchApp .deposit-nav-item.active { 
-   color: #766DE4;
-}
-
-.container-launchApp .form-check-input { 
-    background-color: #000;
-    outline: 2px solid #766DE4;
-    cursor: pointer;
-}
-
-
-.container-launchApp .form-check-input:checked {
-    background-color: #766DE4;
-    border: 3px solid #000;
-    outline: 2px solid #766DE4;
-    background-image: unset;
-}
-
 .container-launchApp .line { 
     position: absolute;
     width: 100%;
     background-color: #766DE4;
     height: 4px;
-    top: -9px;
+    top: -12px;
+}
+
+.deposit-nav-item { 
+    margin-bottom: 15px;
+ }
+
+.deposit-nav-item,
+.deposit-nav-item label { 
+    cursor: pointer;
+}
+
+.deposit-nav-item.active { 
+    color: #766DE4;
+}
+
+.check-dot { 
+        display: flex;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #000;
+        outline: 2px solid #766DE4;
+        border: 2px solid #000;
+        margin: 0 auto 8px;
+        transition: all 0.5s ease;
+}
+
+.check-dot.active { 
+    background-color: #766DE4;
+    transition: all 0.5s ease;
 }
